@@ -177,7 +177,7 @@ function App() {
       </Content>
       <Footer style={{ height: '60px', padding: '5px' }}>
         {size.width > 600 ? (
-          <Row style={{ padding: '0 50px' }}>
+          <Row align='middle' style={{ padding: '0 100px', height: '100%' }}>
             <Col xl={19} style={{
               fontWeight: 400,
               fontSize: '13px',
