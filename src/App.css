@@ -1,3 +1,10 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -13,15 +20,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slick-next {
+  background: url('./asset/right.svg') center center no-repeat !important;
+}
+
+.slick-prev {
+  background: url('./asset/left.svg') center center no-repeat !important;
 }
 
 .App-link {
@@ -32,7 +36,62 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.site-layout {
+  background: #fff;
+  font-size: 13px;
+  font-family: 'Montserrat';
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  background: linear-gradient(192.48deg, #0977BE -120.7%, #1C88CE 285.22%);
+}
+
+.ant-layout {
+  width: 100% !important;
+}
+
+.ant-carousel .slick-dots li button {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 100% !important;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 100% !important;
+}
+
+.ant-carousel .slick-prev {
+  background-color: white !important;
+}
+
+.ant-carousel .slick-next {
+  background-color: white !important;
+}
+
+.advertise {
+  height: 32px;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.ant-card-body {
+  padding: 0px !important;
+}
+
+.horizontal-scroll-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
