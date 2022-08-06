@@ -60,8 +60,8 @@ function Kategori() {
                     </Col>
                     <Col span={15}>
                         <Row style={{ paddingLeft: '10px' }}>
-                            <Col span={5} style={{ padding: '0 25px', fontWeight: 'bold', textAlign: 'center' }}>{category[0]}</Col>
-                            <Col span={5} style={{ padding: '0 25px', fontWeight: 'bold', textAlign: 'center' }}>{category[1]}</Col>
+                            <Col span={12} style={{ fontWeight: 'bold', textAlign: 'center' }}>{category[0]}</Col>
+                            <Col span={12} style={{ fontWeight: 'bold', textAlign: 'center' }}>{category[1]}</Col>
                         </Row>
                     </Col>
                     <Col span={2} style={{ textAlign: 'right' }}>

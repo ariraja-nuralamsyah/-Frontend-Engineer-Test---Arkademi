@@ -10,6 +10,15 @@ import useWindowSize from '../useWindowSize';
 
 function Advertise(props) {
     const size = useWindowSize();
+
+    const getRupiah = (bilangan) => {
+        var reverse = bilangan.toString().split('').reverse().join(''),
+            ribuan = reverse.match(/\d{1,3}/g);
+            ribuan = ribuan.join('.').split('').reverse().join('');
+
+        return ribuan;
+    }
+
     const getAdvertise = (adv) => {
         let object = [];
         let data = [];
@@ -92,10 +101,10 @@ function Advertise(props) {
             {size.width > 600 ? (
                 <>
                     <Carousel afterChange={""} arrows {...settings} style={{ paddingTop: '23px' }}>
-                        {getAdvertise(advertise.filter(element => element.type === props.name)).map((element2,id) => (
+                        {getAdvertise(advertise.filter(element => element.type === props.name)).map((element2, id) => (
                             <div key={id}>
                                 <Row gutter={[10, 10]}>
-                                    {element2.map((element3,id) => (
+                                    {element2.map((element3, id) => (
                                         <Col key={id}>
                                             <Card
                                                 style={{
@@ -158,7 +167,7 @@ function Advertise(props) {
                                                                     fontSize: '10px',
                                                                     color: '#94969B',
                                                                     textDecorationLine: 'line-through',
-                                                                }}>Rp.{element3.original_price}
+                                                                }}>Rp.{getRupiah(element3.original_price)}
                                                                 </span>
                                                             </Col>
                                                         </Row>
@@ -167,7 +176,7 @@ function Advertise(props) {
                                                         fontWeight: 900,
                                                         fontSize: '16px',
                                                         color: '#1C1D20',
-                                                    }}>Rp.{element3.discount !== "" ? element3.price : element3.original_price}</span>
+                                                    }}>Rp.{element3.discount !== "" ? getRupiah(element3.price) : getRupiah(element3.original_price)}</span>
                                                 </div>
                                             </Card>
                                         </Col>
@@ -179,7 +188,7 @@ function Advertise(props) {
                 </>
             ) : (
                 <div className='horizontal-scroll-wrapper' style={{ paddingTop: "30px" }}>
-                    {advertise.map((element3,id) => (
+                    {advertise.map((element3, id) => (
                         <div key={id} style={{ display: 'inline-block', padding: '0 5px' }}>
                             <Card
                                 style={{
@@ -243,7 +252,7 @@ function Advertise(props) {
                                                     fontSize: '10px',
                                                     color: '#94969B',
                                                     textDecorationLine: 'line-through',
-                                                }}>Rp.{element3.original_price}
+                                                }}>Rp.{getRupiah(element3.original_price)}
                                                 </span>
                                             </Col>
                                         </Row>
@@ -252,7 +261,7 @@ function Advertise(props) {
                                         fontWeight: 900,
                                         fontSize: '16px',
                                         color: '#1C1D20',
-                                    }}>Rp.{element3.discount !== "" ? element3.price : element3.original_price}</span>
+                                    }}>Rp.{element3.discount !== "" ? getRupiah(element3.price) : getRupiah(element3.original_price)}</span>
                                 </div>
                             </Card>
                         </div>
