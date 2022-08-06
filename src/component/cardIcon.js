@@ -94,7 +94,7 @@ function CardIcon(props) {
                                 <>
                                     <Row align="middle">
                                         <Col span={4}><img src={element3.image} alt={element3.name} /></Col>
-                                        <Col span={20} style={{paddingLeft: "20px"}}>
+                                        <Col span={20} style={{paddingLeft: "45px"}}>
                                             <span style={{
                                                 fontWeight: 600,
                                                 fontSize: '10px',

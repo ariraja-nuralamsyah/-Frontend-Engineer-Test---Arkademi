@@ -50,7 +50,7 @@ function Kategori() {
                 </Row>
             ) : (
                 <Row>
-                    <Col span={4} style={{ fontWeight: '700', fontSize: '14.5px' }}>
+                    <Col span={7} style={{ fontWeight: '700', fontSize: '14.5px' }}>
                         <Dropdown overlay={<Menu items={getItem()} />}>
                             <Space>
                                 Kategori
@@ -58,11 +58,10 @@ function Kategori() {
                             </Space>
                         </Dropdown>
                     </Col>
-                    <Col span={18}>
+                    <Col span={15}>
                         <Row style={{ paddingLeft: '10px' }}>
                             <Col span={5} style={{ padding: '0 25px', fontWeight: 'bold', textAlign: 'center' }}>{category[0]}</Col>
                             <Col span={5} style={{ padding: '0 25px', fontWeight: 'bold', textAlign: 'center' }}>{category[1]}</Col>
-                            <Col span={14} style={{ padding: '0 25px', fontWeight: 'bold', textAlign: 'center' }}>{category[2]}</Col>
                         </Row>
                     </Col>
                     <Col span={2} style={{ textAlign: 'right' }}>

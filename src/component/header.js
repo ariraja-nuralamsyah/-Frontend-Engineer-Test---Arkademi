@@ -41,8 +41,8 @@ function Header() {
                         <Col span={2} style={{ textAlign: 'center' }}><img src={icon_love} alt="suka" /></Col>
                         <Col span={10}>
                             <Row style={{ width: '100%' }}>
-                                <Col span={12} style={{ textAlign: 'left', paddingRight: '5px' }}><Button style={{ borderRadius: '5px', color: "#0977BE", fontWeight: 'bold' }} block>Masuk</Button></Col>
-                                <Col span={12} style={{ textAlign: 'right', paddingLeft: '5px' }}><Button style={{ borderRadius: '5px', background: '#1E95DD', border: '1px solid #1E95DD', color: 'white', fontWeight: 'bold' }} block>Daftar</Button></Col>
+                                <Col span={12} style={{ textAlign: 'left', paddingRight: '5px' }}><Button style={{ borderRadius: '5px', color: "#0977BE", fontWeight: 'bold', textAlign: 'center', padding: '0' }} block>Masuk</Button></Col>
+                                <Col span={12} style={{ textAlign: 'right', paddingLeft: '5px' }}><Button style={{ borderRadius: '5px', background: '#1E95DD', border: '1px solid #1E95DD', color: 'white', fontWeight: 'bold', textAlign: 'center', padding: '0' }} block>Daftar</Button></Col>
                             </Row>
                         </Col>
                         <Col span={24} style={{paddingBottom: '15px'}}>

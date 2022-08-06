@@ -57,7 +57,7 @@ function App() {
         <div style={{ background: 'linear-gradient(180deg, #F3F5F7 0%, #FFFFFF 100%)', width: '100%', marginTop: '100px' }}>
           <Testimoni />
           <div style={{ padding: size.width > 600 ? '0 100px' : '0 25px', width: '100%' }}>
-            <Row style={{ paddingTop: '70px', paddingBottom: '50px' }}>
+            <Row style={{ paddingTop: '50px', paddingBottom: '50px' }}>
               <Col xs={24} xl={8} style={{ height: '100%' }}><img src={arkademi} alt="arkademi" style={{ width: '100%' }} /></Col>
               <Col xs={24} xl={16}>
                 <Row>
@@ -197,22 +197,22 @@ function App() {
             }}>Kontak</Col>
           </Row>
         ): (
-          <Row style={{ padding: '0 50px', width: '100%' }}>
+          <Row align='middle' style={{ padding: '5 25px', width: '100%', height: '100%' }}>
             <Col span={24} style={{
               fontWeight: 400,
-              fontSize: '13px',
+              fontSize: '10px',
               color: '#94969B',
               textAlign: 'center'
             }}>© 2022 PT Arkademi Daya Indonesia</Col>
             <Col span={12} style={{
               fontWeight: 600,
-              fontSize: '15px',
+              fontSize: '12px',
               color: '#5A5C60',
-              textAlign: 'center'
+              textAlign: 'right'
             }}>Ketentuan Layanan</Col>
             <Col span={12} style={{
               fontWeight: 600,
-              fontSize: '15px',
+              fontSize: '12px',
               color: '#5A5C60',
               textAlign: 'center'
             }}>Kontak</Col>
